@@ -1,0 +1,11 @@
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\bin\Debug\WinForms-ThreadingExample.exe.config
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\bin\Debug\WinForms-ThreadingExample.exe
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\bin\Debug\WinForms-ThreadingExample.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms-ThreadingExample.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms-ThreadingExample.csproj.SuggestedBindingRedirects.cache
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms_ThreadingExample.Form1.resources
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms_ThreadingExample.Properties.Resources.resources
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms-ThreadingExample.csproj.GenerateResource.cache
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms-ThreadingExample.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms-ThreadingExample.exe
+C:\ZBC Data-Kommunikation\H2\Threading\WinForms-ThreadingExample\obj\Debug\WinForms-ThreadingExample.pdb

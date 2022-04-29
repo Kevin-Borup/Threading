@@ -1,0 +1,8 @@
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\obj\Debug\ConsoleApp_BasicThreadingExercises.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\obj\Debug\ConsoleApp_BasicThreadingExercises.csproj.SuggestedBindingRedirects.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\obj\Debug\ConsoleApp_BasicThreadingExercises.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\bin\Debug\ConsoleApp_BasicThreadingExercises.exe.config
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\bin\Debug\ConsoleApp_BasicThreadingExercises.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\bin\Debug\ConsoleApp_BasicThreadingExercises.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\obj\Debug\ConsoleApp_BasicThreadingExercises.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BasicThreadingExercises\obj\Debug\ConsoleApp_BasicThreadingExercises.pdb
