@@ -1,0 +1,8 @@
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\bin\Debug\ConsoleApp_DiningPhilosophers.exe.config
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\bin\Debug\ConsoleApp_DiningPhilosophers.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\bin\Debug\ConsoleApp_DiningPhilosophers.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\obj\Debug\ConsoleApp_DiningPhilosophers.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\obj\Debug\ConsoleApp_DiningPhilosophers.csproj.SuggestedBindingRedirects.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\obj\Debug\ConsoleApp_DiningPhilosophers.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\obj\Debug\ConsoleApp_DiningPhilosophers.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_DiningPhilosophers\obj\Debug\ConsoleApp_DiningPhilosophers.pdb
