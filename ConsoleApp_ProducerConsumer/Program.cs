@@ -8,8 +8,20 @@ namespace ConsoleApp_ProducerConsumer
 {
     internal class Program
     {
+        Buffer Buffer
+        private static Queue<>
         static void Main(string[] args)
         {
+        }
+
+        private void Producer()
+        {
+
+        }
+
+        private void Consumer()
+        {
+
         }
     }
 }

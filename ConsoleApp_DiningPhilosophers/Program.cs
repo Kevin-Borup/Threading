@@ -14,11 +14,11 @@ namespace ConsoleApp_DiningPhilosophers
 
         static void Main(string[] args)
         {
-            Thread p1 = new Thread(EatSpaghetti1);
-            Thread p2 = new Thread(EatSpaghetti1);
-            Thread p3 = new Thread(EatSpaghetti1);
-            Thread p4 = new Thread(EatSpaghetti1);
-            Thread p5 = new Thread(EatSpaghetti1);
+            Thread p1 = new Thread(EatSpaghetti);
+            Thread p2 = new Thread(EatSpaghetti);
+            Thread p3 = new Thread(EatSpaghetti);
+            Thread p4 = new Thread(EatSpaghetti);
+            Thread p5 = new Thread(EatSpaghetti);
 
             p1.Name = "2";
             p2.Name = "3";
@@ -48,7 +48,7 @@ namespace ConsoleApp_DiningPhilosophers
 
         }
 
-        private static void EatSpaghetti1()
+        private static void EatSpaghetti()
         {
             Random numGen = new Random();
 
