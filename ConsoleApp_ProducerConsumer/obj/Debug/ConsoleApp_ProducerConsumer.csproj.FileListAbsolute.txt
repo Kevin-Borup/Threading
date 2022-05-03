@@ -1,0 +1,8 @@
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\bin\Debug\ConsoleApp_ProducerConsumer.exe.config
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\bin\Debug\ConsoleApp_ProducerConsumer.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\bin\Debug\ConsoleApp_ProducerConsumer.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\obj\Debug\ConsoleApp_ProducerConsumer.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\obj\Debug\ConsoleApp_ProducerConsumer.csproj.SuggestedBindingRedirects.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\obj\Debug\ConsoleApp_ProducerConsumer.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\obj\Debug\ConsoleApp_ProducerConsumer.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_ProducerConsumer\obj\Debug\ConsoleApp_ProducerConsumer.pdb

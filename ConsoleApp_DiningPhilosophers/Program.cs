@@ -10,7 +10,7 @@ namespace ConsoleApp_DiningPhilosophers
     internal class Program
     {
         static bool continueExecuting = true;
-        static object[] forks = new object[5] {new object(), new object(), new object(), new object(), new object()};
+        static object[] forks = new object[5] { new object(), new object(), new object(), new object(), new object() };
 
         static void Main(string[] args)
         {
@@ -51,47 +51,44 @@ namespace ConsoleApp_DiningPhilosophers
         private static void EatSpaghetti()
         {
             Random numGen = new Random();
+            int threadNum = Convert.ToInt32(Thread.CurrentThread.Name);
+
+            int leftFork = threadNum - 2;
+            int rightFork = threadNum - 3;
+
+            if (rightFork < 0)
+            {
+                rightFork = 4;
+            }
 
             while (continueExecuting)
             {
-                int threadNum = Convert.ToInt32(Thread.CurrentThread.Name);
-
-                int leftFork = threadNum - 2;
-                int rightFork = threadNum - 3;
-
-                if (rightFork < 0)
+                if (threadNum == 6)
                 {
-                    rightFork = 4;
+                    Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is waiting...");
+                    Thread.Sleep(50);
+                    Monitor.Enter(forks[rightFork]);
+                    Monitor.Enter(forks[leftFork]);
+                    Console.WriteLine(" --- Philosopher " + Thread.CurrentThread.Name + " is eating...");
+                    Thread.Sleep(numGen.Next(100, 350));
+                    Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is thinking...");
+                    Monitor.Exit(forks[leftFork]);
+                    Monitor.Exit(forks[rightFork]);
                 }
-
-                while (continueExecuting)
+                else
                 {
-                    if (threadNum == 6)
-                    {
-                        Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is waiting...");
-                        Thread.Sleep(50);
-                        Monitor.Enter(forks[rightFork]);
-                        Monitor.Enter(forks[leftFork]);
-                        Console.WriteLine(" --- Philosopher " + Thread.CurrentThread.Name + " is eating...");
-                        Thread.Sleep(numGen.Next(100, 350));
-                        Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is thinking...");
-                        Monitor.Exit(forks[leftFork]);
-                        Monitor.Exit(forks[rightFork]);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is waiting...");
-                        Thread.Sleep(50);
-                        Monitor.Enter(forks[leftFork]);
-                        Monitor.Enter(forks[rightFork]);
-                        Console.WriteLine(" --- Philosopher " + Thread.CurrentThread.Name + " is eating...");
-                        Thread.Sleep(numGen.Next(100, 350));
-                        Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is thinking...");
-                        Monitor.Exit(forks[rightFork]);
-                        Monitor.Exit(forks[leftFork]);
-                    }
+                    Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is waiting...");
+                    Thread.Sleep(50);
+                    Monitor.Enter(forks[leftFork]);
+                    Monitor.Enter(forks[rightFork]);
+                    Console.WriteLine(" --- Philosopher " + Thread.CurrentThread.Name + " is eating...");
+                    Thread.Sleep(numGen.Next(100, 350));
+                    Console.WriteLine("Philosopher " + Thread.CurrentThread.Name + " is thinking...");
+                    Monitor.Exit(forks[rightFork]);
+                    Monitor.Exit(forks[leftFork]);
                 }
             }
+
         }
     }
 }
