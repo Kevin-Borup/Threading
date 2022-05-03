@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_ProducerConsumer
 {
-    internal class Exercise5
+    internal class ExerciseMutex
     {
-        private static object _lock = new object();
+        private static Mutex mutex = new Mutex(false);
         private static Queue<string> products = new Queue<string>();
-
-        public Exercise5()
+        public ExerciseMutex()
         {
-            Main5();
+            MainMutex();
         }
-        public static void Main5()
+
+        public static void MainMutex()
         {
             Thread producer = new Thread(Produce);
             Thread consumer = new Thread(Consume);
@@ -32,42 +32,34 @@ namespace ConsoleApp_ProducerConsumer
         {
             while (true)
             {
-                Monitor.Enter(_lock);
-                if (products.Count < 3)
+                Console.WriteLine("Producer waits ...");
+                mutex.WaitOne();
+                while (products.Count < 3)
                 {
                     products.Enqueue("product");
                     Console.WriteLine("Producer har produceret: Nr. " + products.Count);
                 }
-                else
-                {
-                    Monitor.Pulse(_lock);
-                    Console.WriteLine("Producer waits ...");
-                    Monitor.Wait(_lock);
-                }
-                Monitor.Exit(_lock);
+                mutex.ReleaseMutex();
                 Thread.Sleep(100 / 15);
             }
+
         }
 
         private static void Consume()
         {
             while (true)
             {
-                Monitor.Enter(_lock);
-                if (products.Count > 0)
+                Console.WriteLine("Consumer waits ...");
+                mutex.WaitOne();
+                while (products.Count > 0)
                 {
                     products.Dequeue();
                     Console.WriteLine("Consumer har consumeret: Nr " + (products.Count + 1));
                 }
-                else
-                {
-                    Monitor.Pulse(_lock);
-                    Console.WriteLine("Consumer waits ...");
-                    Monitor.Wait(_lock);
-                }
-                Monitor.Exit(_lock);
+                mutex.ReleaseMutex();
                 Thread.Sleep(100 / 15);
             }
+
         }
     }
 }

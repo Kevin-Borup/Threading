@@ -14,6 +14,7 @@ namespace ConsoleApp_ProducerConsumer
         {
             Exercise4 Ex4 = new Exercise4();
             //Exercise5 Ex5 = new Exercise5();
+            //ExerciseMutex ExMutex = new ExerciseMutex();
         }
     }
 }
