@@ -1,0 +1,8 @@
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\bin\Debug\ConsoleApp_VendingMachine.exe.config
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\bin\Debug\ConsoleApp_VendingMachine.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\bin\Debug\ConsoleApp_VendingMachine.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\obj\Debug\ConsoleApp_VendingMachine.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\obj\Debug\ConsoleApp_VendingMachine.csproj.SuggestedBindingRedirects.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\obj\Debug\ConsoleApp_VendingMachine.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\obj\Debug\ConsoleApp_VendingMachine.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_VendingMachine\obj\Debug\ConsoleApp_VendingMachine.pdb
