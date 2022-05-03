@@ -9,7 +9,7 @@ namespace ConsoleApp_VendingMachine
 {
     internal class Program
     {
-        private static int oneOverFifty = 100 / 50;
+        private static int oneOverFifteen = 100 / 15;
 
         private static BottleQueue<string> bottles = new BottleQueue<string>(24);
         private static BottleQueue<string> beerBottles = new BottleQueue<string>(24);
@@ -78,7 +78,7 @@ namespace ConsoleApp_VendingMachine
                         Monitor.Exit(bottles.Lock);
                         break;
                     }
-                    Thread.Sleep(oneOverFifty);
+                    Thread.Sleep(oneOverFifteen);
                 }
             }
         }
@@ -102,7 +102,7 @@ namespace ConsoleApp_VendingMachine
                         Monitor.Exit(bottles.Lock);
                         break;
                     }
-                    Thread.Sleep(oneOverFifty);
+                    Thread.Sleep(oneOverFifteen);
                 }
 
                 if (bottle.Contains("Beer"))
@@ -122,7 +122,7 @@ namespace ConsoleApp_VendingMachine
                             Monitor.Exit(beerBottles.Lock);
                             break;
                         }
-                        Thread.Sleep(oneOverFifty);
+                        Thread.Sleep(oneOverFifteen);
                     }
                 }
                 else if (bottle.Contains("Soda"))
@@ -142,7 +142,7 @@ namespace ConsoleApp_VendingMachine
                             Monitor.Exit(sodaBottles.Lock);
                             break;
                         }
-                        Thread.Sleep(oneOverFifty);
+                        Thread.Sleep(oneOverFifteen);
                     }
                 }
             }
@@ -163,7 +163,7 @@ namespace ConsoleApp_VendingMachine
                     Monitor.Pulse(beerBottles.Lock);
                     Monitor.Exit(beerBottles.Lock);
                 }
-                Thread.Sleep(oneOverFifty);
+                Thread.Sleep(oneOverFifteen);
             }
         }
 
@@ -182,7 +182,7 @@ namespace ConsoleApp_VendingMachine
                     Monitor.Pulse(sodaBottles.Lock);
                     Monitor.Exit(sodaBottles.Lock);
                 }
-                Thread.Sleep(oneOverFifty);
+                Thread.Sleep(oneOverFifteen);
             }
         }
 
