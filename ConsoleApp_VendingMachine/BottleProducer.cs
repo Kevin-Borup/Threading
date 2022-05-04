@@ -68,11 +68,18 @@ namespace ConsoleApp_VendingMachine
                     }
                     catch (Exception e)
                     {
-                        if (Monitor.IsEntered(producedBottles.Lock))
+                        if (e is ThreadAbortException || e is ThreadInterruptedException || e is ArgumentNullException)
                         {
-                            Monitor.Exit(producedBottles.Lock);
+                            if (Monitor.IsEntered(producedBottles.Lock))
+                            {
+                                Monitor.Exit(producedBottles.Lock);
+                            }
+                            Program.ExceptionWriter(e);
                         }
-                        Program.ExceptionWriter(e);
+                        else
+                        {
+                            throw;
+                        }
                     }
                 }
             }

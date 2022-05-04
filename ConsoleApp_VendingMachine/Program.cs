@@ -9,12 +9,12 @@ namespace ConsoleApp_VendingMachine
 {
     internal class Program
     {
-        private static BottleQueue<Bottle> producedBottles = new BottleQueue<Bottle>(24);
-        private static BottleQueue<Bottle> beerBottles = new BottleQueue<Bottle>(24);
-        private static BottleQueue<Bottle> sodaBottles = new BottleQueue<Bottle>(24);
-
         static void Main(string[] args)
         {
+            BottleQueue<Bottle> producedBottles = new BottleQueue<Bottle>(24);
+            BottleQueue<Bottle> beerBottles = new BottleQueue<Bottle>(24);
+            BottleQueue<Bottle> sodaBottles = new BottleQueue<Bottle>(24);
+
             BottleProducer producer = new BottleProducer(producedBottles);
             BottleSplitter splitter = new BottleSplitter(producedBottles, beerBottles, sodaBottles);
             BottleConsumer beerExport = new BottleConsumer(beerBottles);
@@ -75,7 +75,9 @@ namespace ConsoleApp_VendingMachine
         /// <param name="e"></param>
         public static void ExceptionWriter(Exception e)
         {
-            Console.WriteLine("An Exception occured: " + e.Message + " from " + e.Source + "\n" + e);
+            Console.WriteLine("An Exception occured: " + e.Message + " from " + e.Source + "\n\n" + e);
         } 
+
+        
     }
 }

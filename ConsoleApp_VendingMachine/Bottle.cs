@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp_VendingMachine
+﻿namespace ConsoleApp_VendingMachine
 {
     /// <summary>
     /// This represents a bottle in our system. It contains a Type and an ID.

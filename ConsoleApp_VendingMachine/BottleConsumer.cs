@@ -31,7 +31,6 @@ namespace ConsoleApp_VendingMachine
         {
             while (true)
             {
-                
                 try
                 {
                     if (Monitor.TryEnter(filteredBottles.Lock))
@@ -48,11 +47,18 @@ namespace ConsoleApp_VendingMachine
                 }
                 catch (Exception e)
                 {
-                    if (Monitor.IsEntered(filteredBottles.Lock))
+                    if (e is ThreadAbortException || e is ThreadInterruptedException || e is ArgumentNullException)
                     {
-                        Monitor.Exit(filteredBottles.Lock);
+                        if (Monitor.IsEntered(filteredBottles.Lock))
+                        {
+                            Monitor.Exit(filteredBottles.Lock);
+                        }
+                        Program.ExceptionWriter(e);
                     }
-                    Program.ExceptionWriter(e);
+                    else
+                    {
+                        throw;
+                    }
                 }
             }
         }

@@ -34,7 +34,7 @@ namespace ConsoleApp_VendingMachine
         /// <summary>
         /// This dequeues a bottle from the production Queue. The bottle is then transferen to the relevant queue.
         /// </summary>
-        public  void Split()
+        public void Split()
         {
             Bottle bottle;
             while (true)
@@ -58,11 +58,18 @@ namespace ConsoleApp_VendingMachine
                     }
                     catch (Exception e)
                     {
-                        if (Monitor.IsEntered(producedBottles.Lock))
+                        if (e is ThreadAbortException || e is ThreadInterruptedException || e is ArgumentNullException)
                         {
-                            Monitor.Exit(producedBottles.Lock);
+                            if (Monitor.IsEntered(producedBottles.Lock))
+                            {
+                                Monitor.Exit(producedBottles.Lock);
+                            }
+                            Program.ExceptionWriter(e);
                         }
-                        Program.ExceptionWriter(e);
+                        else
+                        {
+                            throw;
+                        }
                     }
                 }
 
@@ -104,11 +111,18 @@ namespace ConsoleApp_VendingMachine
                 }
                 catch (Exception e)
                 {
-                    if (Monitor.IsEntered(bottleQueue.Lock))
+                    if (e is ThreadAbortException || e is ThreadInterruptedException || e is ArgumentNullException)
                     {
-                        Monitor.Exit(bottleQueue.Lock);
+                        if (Monitor.IsEntered(bottleQueue.Lock))
+                        {
+                            Monitor.Exit(bottleQueue.Lock);
+                        }
+                        Program.ExceptionWriter(e);
                     }
-                    Program.ExceptionWriter(e);
+                    else
+                    {
+                        throw;
+                    }
                 }
             }
         }
