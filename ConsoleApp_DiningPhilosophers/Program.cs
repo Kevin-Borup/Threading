@@ -45,7 +45,6 @@ namespace ConsoleApp_DiningPhilosophers
             p3.Join();
             p4.Join();
             p5.Join();
-
         }
 
         private static void EatSpaghetti()

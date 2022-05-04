@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bottle.cs" />
     <Compile Include="BottleQueue.cs" />
+    <Compile Include="BottleConsumer.cs" />
+    <Compile Include="BottleProducer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BottleSplitter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
