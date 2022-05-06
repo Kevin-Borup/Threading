@@ -1,0 +1,15 @@
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\bin\Debug\net6.0\ConsoleApp_BaggageHandling.exe
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\bin\Debug\net6.0\ConsoleApp_BaggageHandling.deps.json
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\bin\Debug\net6.0\ConsoleApp_BaggageHandling.runtimeconfig.json
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\bin\Debug\net6.0\ConsoleApp_BaggageHandling.dll
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\bin\Debug\net6.0\ConsoleApp_BaggageHandling.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.csproj.AssemblyReference.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.AssemblyInfoInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.AssemblyInfo.cs
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.csproj.CoreCompileInputs.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.dll
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\refint\ConsoleApp_BaggageHandling.dll
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.pdb
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ConsoleApp_BaggageHandling.genruntimeconfig.cache
+C:\ZBC Data-Kommunikation\H2\Threading\ConsoleApp_BaggageHandling\obj\Debug\net6.0\ref\ConsoleApp_BaggageHandling.dll
